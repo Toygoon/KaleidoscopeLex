@@ -12,7 +12,7 @@
 [a-zA-Z][a-zA-Z0-9]*    {printf("-4\t %s\n", yytext);}
 [0-9.]+    {printf("-5\t %s\n", yytext);}
 [+;()<>,*-] {printf("%d\t %s\n", yytext[0], yytext);}
-[\t\n ] {}
+[\t\n ]   ;
 
 %%
 
